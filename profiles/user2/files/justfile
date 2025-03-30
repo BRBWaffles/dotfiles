@@ -1,0 +1,6 @@
+gobrr:
+    nixos-rebuild switch --use-remote-sudo --flake ~/Projects/dotfiles#desktop
+
+
+fuckoff:
+    shutdown now

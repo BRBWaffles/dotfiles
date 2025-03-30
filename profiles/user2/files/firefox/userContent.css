@@ -1,0 +1,126 @@
+/* home page edits */
+
+@-moz-document url("about:home"), url("about:newtab"){
+    html, body, #root, input {
+        background-color: #1a1920 !important;
+    }
+
+    * { /* this is where I enforce the font everywhere */
+        font-size: 8pt !important;
+        font-family: "Lucida Grande", "Classica" !important;
+        line-height: 9pt !important;
+    } /* so that my sidebar tabs aren't fucking HUGE */
+
+    .collapsible-section.ds-layout {
+        max-height: 400px !important;
+        background-color: #000 !important;
+    }
+    .search-wrapper {
+        filter: grayscale(80%) !important;
+        opacity: 0 !important;
+        vertical-align: middle !important;
+    }
+    .personalizeButtonWrapper {
+        opacity: 0.2 !important;
+        transition: transform 200ms ease 0.5s, opacity 200ms ease 0.5s !important;
+    }
+    .personalizeButtonWrapper:hover {
+        opacity: 0.7 !important;
+        transition-duration: 200ms !important;
+        transition-delay: 0s !important;
+    }
+    .search-inner-wrapper { /* begone THOT */
+        display:none !important;
+        width: 300px !important;
+        min-height: 30px !important;
+        --newtab-search-icon: 0 !important;
+    }
+    .body-wrapper  {margin-top: -200px;}
+    .context-menu-button { /* the button that has the menu to edit your shortcuts */
+        margin-right: 10px !important; margin-top: 0px !important; opacity: 0 !important;
+        background-color: transparent !important;
+    }
+    .context-menu-button:hover {opacity: 0.7 !important;}
+    .top-site-outer, .top-site-inner {
+        margin-block-end: 0px !important;
+        background-color: transparent !important;
+    }
+    .top-site-outer:hover {
+        background-color: transparent !important;
+    }
+    .top-site-button {padding: 0px !important; background-color:transparent !important;}
+
+    .tile { /* here be buttons */
+        filter: grayscale(100%) !important;
+        background-color: transparent !important;
+        border: 0px !important;
+        opacity: 0.1 !important;
+        transition: 50ms ease 0.4s !important;
+        vertical-align: middle !important;
+    }
+    .tile:hover {
+        filter: grayscale(50%) !important;
+        opacity: 0.7 !important;
+        transition: 50ms ease 0.2s !important;
+    }
+    .icon-wrapper {
+        background-color: transparent !important;
+        border: 0px !important;
+    }
+
+    .top-site-button .top-site-icon{
+        background-color: transparent !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        padding: 0px !important;
+        border-radius: 0px !important;
+    }
+
+/* custom icons so I can have custom+transparency on Home and New Tab pages */
+    .top-site-button[href="http://deck.blue"] .top-site-icon{
+        background-image: url("https://i.imgur.com/Z8IrhAY.png") !important;
+    }
+    .top-site-button[href="http://new.reddit.com"] .top-site-icon{
+        background-image: url("https://i.imgur.com/3QIQIeD.png") !important;
+    }
+    .top-site-button[href="http://gaiaonline.com"] .top-site-icon{
+        background-image: url("https://i.imgur.com/Vp7urqM.png") !important;
+    }
+    .top-site-button[href="http://orcanetwork.org"] .top-site-icon{
+        background-image: url("https://i.imgur.com/hvKM68l.png") !important;
+    }
+    .top-site-button[href="http://whaleresearch.com"] .top-site-icon{
+        background-image: url("https://i.imgur.com/uuBDA57.png") !important;
+    }
+    .top-site-button[href="http://whale-of-a-porpoise.blogspot.ca"] .top-site-icon{
+        background-image: url("https://i.imgur.com/qm2BYfR.png") !important;
+    }
+
+/* !!! icon alignment and size fix !!! */
+    .icon.icon-pin-small {
+        width: 0px !important;
+    }
+    .top-site-outer .title {
+        padding-top: 0px !important;
+    }
+    .top-site-outer {
+        margin-block-end: unset !important;
+    }
+    .top-site-outer .title span {
+        visibility: hidden !important;
+    }
+    .top-site-outer .title:not(.sponsored) .sponsored-label {
+        height: 0px !important;
+    }
+    .top-site-outer .context-menu-button:hover {
+        background-color: unset !important;
+    }
+    .top-site-outer .context-menu-button {
+        transition: none !important;
+        background-color: unset !important;
+        top: 0px !important;
+    }
+    .top-site-outer .default-icon {width:48px !important; height:48px !important;}
+}
+/* --- home page edits end --- */

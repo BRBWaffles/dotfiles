@@ -1,0 +1,18 @@
+[
+  "catppuccin"
+  "catppuccin-blur"
+  "cargo-appraiser"
+  "cargo-tom"
+  "markdown-oxide"
+  "material-dark"
+  "rose-pine-theme"
+  "material-theme"
+  "just"
+  "elm"
+  "haskell"
+  "nix"
+  "typst"
+  "nu"
+  "toml"
+  "xml"
+]

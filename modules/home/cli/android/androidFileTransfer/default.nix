@@ -1,0 +1,12 @@
+{
+  pkgs,
+  ...
+}:
+{
+  home.packages = builtins.attrValues {
+    inherit (pkgs)
+      android-file-transfer
+      ;
+  };
+}
+# requires that users be part of the adbusers group

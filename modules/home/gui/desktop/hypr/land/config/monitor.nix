@@ -1,0 +1,6 @@
+let
+  monitorSettings = [
+    "eDP-1,highres@highrr,0x0,1"
+  ];
+in
+monitorSettings

@@ -1,0 +1,14 @@
+ewwEdit:
+    eww --config /home/nick/dotfiles/home-manager/modules/eww/config/ open centerPanel
+
+ewwLaunch:
+    ./home/nick/dotfiles/home-manager/modules/eww/config/scripts/master.sh
+
+gobrrr:
+    home-manager switch --flake ~/dotfiles#desktop
+
+gobrrrl:
+    nixos-rebuild switch --use-remote-sudo --flake /home/nick/dotfiles#desktop
+
+fuckoff:
+    shutdown now
